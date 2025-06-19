@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This layout scrolls if content doesn't fit the screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- This puts everything in a vertical line in the center -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        android:minHeight="100dp">
+
+        <!-- the user enters the song title here -->
+        <EditText
+            android:id="@+id/etSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Song Title"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- the user enters the artists name here -->
+        <EditText
+            android:id="@+id/etArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Artist Name"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- this is where the user enters their rating -->
+        <EditText
+            android:id="@+id/etRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Rating (1-5)"
+            android:inputType="number"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- this is where the user adds their own comments -->
+        <EditText
+            android:id="@+id/etComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Comment"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- this button adds the users inputs to the playlist -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:text="Add to Playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- this button takes you to the details that you have enters which takes you to the second screen -->
+        <Button
+            android:id="@+id/btnViewDetails"
+            android:text="View Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- button to eixt the app -->
+        <Button
+            android:id="@+id/btnExit"
+            android:text="Exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

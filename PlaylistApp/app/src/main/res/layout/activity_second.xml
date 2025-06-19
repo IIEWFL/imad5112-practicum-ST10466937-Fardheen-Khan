@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This makes it so that you can scroll on this screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- this is for all the texts and buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <!-- this shows you the song details and the their ratings -->
+        <TextView
+            android:id="@+id/tvOutput"
+            android:text="Song Details Appear Here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textAlignment="center" />
+
+        <!-- this button shows you all the songs in your playlist -->
+        <Button
+            android:id="@+id/btnDisplaySongs"
+            android:text="Display Songs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <!-- this button calculates and shows you the average rating of each song -->
+        <Button
+            android:id="@+id/btnAverage"
+            android:text="Show Average Rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <!-- this button takes you back to the main screen -->
+        <Button
+            android:id="@+id/btnReturn"
+            android:text="Return to Main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+</ScrollView>
