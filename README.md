@@ -55,3 +55,5 @@ when clicking the "display average" button
 ![image](https://github.com/user-attachments/assets/dba2ac0b-ad2a-4628-a085-beba58455bb6)
 
 return to main takes you back to the main page and exit closes the app.
+
+while writing this application i had run into a problem with the vm where the emulator wasnt working and i had to complete the project and run it on my laptop to confirm it was working there after i had moved the project file from my laptop to the vm.
